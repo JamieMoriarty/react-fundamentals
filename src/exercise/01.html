@@ -3,6 +3,31 @@
 
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
+  <html>
+    <body>
+      <!-- This is not necessary post extra credit, only before:  
+        <div id="root"></div>
+      -->
+      <script type="module">
+        /* Extra credit work: */
+        var root = document.createElement('div');
+        root.id = 'root';
+
+        var div = document.createElement('div');
+        div.textContent = 'Hello world';
+        div.className = 'container';
+        /* extra credit work:  */
+        root.appendChild(div);
+
+        /* For the regular assignment you would do:
+          document.getElementById('root').appendChild(div);
+        */
+
+        //For the extra credit one:
+        document.body.appendChild(root);
+      </script>
+    </body>
+  </html>
 
 <!-- These next instructions are to be written in JavaScript in the <script> tag -->
 <!-- 🐨 Create a div -->
