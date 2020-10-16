@@ -41,7 +41,7 @@ function FocusDemo() {
         <h1>With array index as key</h1>
         {items.map((item, index) => (
           <input
-            key={index}
+            key={`some-string-${index}`}
             value={item.value}
             onChange={getChangeHandler(item)}
           />
